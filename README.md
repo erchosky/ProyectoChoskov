@@ -1,6 +1,12 @@
-# Proyecto Choskov · La descarga · versión 0.5.1
+# Proyecto Choskov · La descarga
 
-Un juego de extracción **3D, PvE, de un jugador y sin conexión**, preparado para Android e iPhone en horizontal. Creado con **Godot 4.7.2 stable**, GDScript y el renderizador Compatibility. Personajes, escenarios, sonidos e identidad originales.
+Juego de extracción 3D, PvE, de un jugador y sin conexión. Está preparado para Android e iPhone en horizontal y desarrollado con Godot 4.7.2, GDScript y el renderizador Compatibility.
+
+La versión 0.5.1 incorpora correcciones de entrada táctil, equipamiento y guardado. Es un prototipo con identidad, personajes, escenarios y sonidos originales; la verificación en dispositivos y sus límites se detallan más abajo.
+
+[Empezar desde GitHub o el ZIP](#empezar-desde-github-o-el-zip) · [Revisión de depuración 0.5.1](#revisión-de-depuración-051) · [Novedades 0.5](#novedades-05) · [Novedades 0.4](#novedades-04) · [Jugar ahora](#jugar-ahora) · [Primera incursión](#primera-incursión)
+
+---
 
 ## Empezar desde GitHub o el ZIP
 
