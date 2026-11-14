@@ -1,0 +1,27 @@
+.godot/
+tools/
+builds/
+*.tmp
+*.log
+.DS_Store
+
+node_modules/
+
+# Imported resources and Python caches are regenerated locally; keep .gd.uid.
+*.import
+__pycache__/
+*.py[cod]
+
+# Local configuration and signing material.
+.env
+.env.*
+!.env.example
+export_credentials.cfg
+*.p12
+*.pfx
+*.pem
+*.key
+*.keystore
+*.jks
+*.mobileprovision
+DerivedData/

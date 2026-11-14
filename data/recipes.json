@@ -1,0 +1,55 @@
+[
+  {
+    "id": "bandages",
+    "name": "Vendajes de tela",
+    "needs": {
+      "cloth": 2
+    },
+    "output": {
+      "bandage": 2
+    }
+  },
+  {
+    "id": "medkit",
+    "name": "Botiquín de campaña",
+    "needs": {
+      "cloth": 3,
+      "filter": 1
+    },
+    "output": {
+      "medkit": 1
+    }
+  },
+  {
+    "id": "shells",
+    "name": "Cartuchos de Brezo",
+    "needs": {
+      "scrap": 2
+    },
+    "output": {
+      "ammo20": 12
+    }
+  },
+  {
+    "id": "decoy",
+    "name": "Señuelo de cuerda",
+    "needs": {
+      "wire": 1,
+      "scrap": 1
+    },
+    "output": {
+      "decoy": 1
+    }
+  },
+  {
+    "id": "battery",
+    "name": "Celda recuperada",
+    "needs": {
+      "wire": 2,
+      "circuit": 1
+    },
+    "output": {
+      "battery": 1
+    }
+  }
+]

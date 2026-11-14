@@ -1,0 +1,274 @@
+Quiero que diseñes e implementes un videojuego de extracción para móvil inspirado en la experiencia de Escape from Duckov: explorar, combatir, encontrar botín, decidir cuánto arriesgar y escapar para mejorar tu refugio.
+
+El nombre provisional será «Proyecto Choskov». Crea personajes, escenarios, objetos e identidad visual propios.
+
+Actúa como desarrollador de videojuegos con experiencia en controles táctiles, diseño de combate, comportamiento de enemigos y optimización móvil. Trabaja hasta entregar una primera versión jugable completa; acompaña el diseño con una implementación real.
+
+## 1. Objetivo del proyecto
+
+El juego debe estar diseñado desde el principio para teléfonos Android e iPhone, en horizontal.
+
+Quiero una experiencia de un jugador, PvE y sin conexión, con incursiones de aproximadamente 5–10 minutos.
+
+El ciclo principal debe funcionar completo:
+
+Preparar equipo en el refugio → entrar en una zona → explorar y combatir → recoger botín → extraer o morir → actualizar el refugio → preparar otra incursión.
+
+La sensación que buscamos es:
+
+«Tengo algo valioso en la mochila, poca munición y un edificio sin explorar. ¿Me arriesgo o vuelvo a casa?».
+
+Prioriza controles cómodos, combate legible y decisiones interesantes.
+
+## 2. Referencia proporcionada
+
+Revisa este repositorio:
+
+https://github.com/a136332462/Escape-From-Duckov
+
+Es una wiki y puede servir para investigar conceptos y organización de información. Comprueba lo que contiene antes de proponer reutilizar algo. No lo trates como el código fuente del videojuego.
+
+Usa las referencias para entender el género y diseña nuestra implementación. Emplea recursos originales o con permisos adecuados y registra la procedencia de los recursos externos.
+
+## 3. Tecnología
+
+Usa Godot 4 estable con GDScript como opción inicial.
+
+Antes de empezar:
+
+- Comprueba qué herramientas están disponibles.
+- Elige una versión estable concreta y deja registrada esa versión.
+- Comprueba las posibilidades de exportación para Android e iOS.
+- Selecciona el renderizador según compatibilidad y rendimiento móvil.
+- Si encuentras una limitación importante, explica su efecto y plantea una alternativa concreta.
+
+El entregable principal debe ser un proyecto de juego preparado para exportaciones nativas. Una versión web puede añadirse para facilitar pruebas, pero no debe sustituir el objetivo móvil.
+
+Prioriza una primera compilación Android instalable. Mantén la misma base preparada para iOS y documenta lo que falte para compilar, firmar y probar en iPhone.
+
+## 4. Dirección visual
+
+Utiliza 3D sencillo con cámara elevada, ligeramente inclinada y seguimiento suave.
+
+Estética:
+
+- Personajes animales originales, expresivos y fáciles de distinguir.
+- Entorno de supervivencia con bosque, instalaciones abandonadas y un refugio.
+- Modelos low poly y materiales sencillos.
+- Siluetas claras entre personajes, enemigos y objetos interactivos.
+- Interiores visibles mediante ocultación o transparencia de techos y obstáculos.
+- Indicadores legibles de daño, disparos, recogida y extracción.
+
+Mantén una dirección visual coherente desde el prototipo. Puedes empezar con modelos sencillos y recursos provisionales claramente identificados.
+
+La interfaz debe estar en español.
+
+## 5. Controles táctiles
+
+Implementa controles multitáctiles reales:
+
+- Joystick izquierdo para movimiento.
+- Joystick derecho para apuntar; al mantenerlo desplazado, disparar.
+- Zona muerta para evitar disparos accidentales.
+- Botones para recargar, curarse, interactuar y abrir la mochila.
+- Ayuda de apuntado suave y configurable.
+- Sensibilidad y tamaño de controles ajustables.
+- Respeto de zonas seguras, bordes y recortes de pantalla.
+
+La ayuda de apuntado debe respetar obstáculos y alcance.
+
+El jugador debe poder moverse, apuntar y utilizar otro botón simultáneamente. Gestiona cada dedo de forma independiente y limpia los controles al pausar o perder el foco.
+
+Añade teclado y ratón para facilitar el desarrollo, manteniendo los controles táctiles como prioridad.
+
+## 6. Primera versión jugable
+
+Limita la primera entrega a:
+
+- Un refugio.
+- Un mapa de incursión.
+- Un personaje.
+- Dos armas: pistola y rifle.
+- Dos tipos de enemigos.
+- Aproximadamente quince objetos entre munición, curación, materiales y equipo.
+- Tres misiones.
+- Dos puntos de extracción.
+- Un tutorial breve integrado en la primera partida.
+
+El mapa debe incluir:
+
+- Zona inicial relativamente segura.
+- Caminos y coberturas.
+- Un almacén con mejor botín y mayor peligro.
+- Rutas alternativas.
+- Contenedores y objetos saqueables.
+- Enemigos distribuidos para permitir explorar y evitar combates.
+- Salidas claramente identificables.
+
+Usa un mapa diseñado a mano, con variaciones moderadas de botín y enemigos entre incursiones.
+
+## 7. Combate y enemigos
+
+Implementa:
+
+- Salud, daño y muerte.
+- Munición en cargador y munición de reserva.
+- Recarga con duración.
+- Cadencia, dispersión, alcance y retroceso visual.
+- Colisiones y coberturas que bloqueen disparos.
+- Curación limitada con tiempo de uso.
+- Sonidos y efectos que comuniquen lo que ocurre.
+
+Las armas deben sentirse distintas y evitar impactos a través de paredes.
+
+Los enemigos deben poder:
+
+- Patrullar.
+- Detectar al jugador por distancia y línea de visión.
+- Investigar ruidos cercanos.
+- Perseguir y atacar.
+- Perder al jugador y buscar su última posición conocida.
+- Volver a su comportamiento normal.
+
+Incluye un enemigo de corto alcance y otro con arma a distancia. Evita que detecten permanentemente al jugador a través de obstáculos.
+
+## 8. Inventario y botín
+
+Diseña una mochila cómoda para pantalla táctil.
+
+Para la primera versión, utiliza una cuadrícula de ranuras sencilla, sin objetos de formas complicadas.
+
+Incluye:
+
+- Capacidad limitada.
+- Objetos apilables cuando corresponda.
+- Panel de saqueo con acciones de tocar para recoger.
+- Equipar, usar, soltar y comparar.
+- Indicación clara de mochila llena.
+- Información breve sobre cada objeto.
+- Separación entre equipo llevado, botín de la incursión y almacén del refugio.
+
+En modo de un jugador, abrir la mochila debe pausar la acción. Indica ese estado claramente.
+
+## 9. Extracción y muerte
+
+Para extraer:
+
+- El jugador entra en una zona válida.
+- Activa la extracción.
+- Permanece dentro durante una cuenta atrás.
+- Salir de la zona o recibir daño cancela la cuenta atrás.
+- Al completarse, vuelve al refugio y conserva lo transportado.
+
+Si muere:
+
+- Pierde el equipo y los objetos que llevaba en la incursión.
+- Conserva el almacén y las mejoras del refugio.
+- Recibe un resumen comprensible.
+- Puede comenzar de nuevo con un equipo básico de emergencia para evitar quedarse bloqueado.
+
+El resultado de una incursión debe procesarse una sola vez, aunque se repita una señal o se cierre el juego durante la transición.
+
+## 10. Refugio y progresión
+
+El refugio debe permitir:
+
+- Guardar y retirar objetos.
+- Preparar el equipo.
+- Consultar y entregar misiones.
+- Comprar o conseguir suministros básicos.
+- Mejorar la capacidad del almacén.
+- Desbloquear una mejora sencilla de equipo.
+
+Incluye tres misiones originales: recoger materiales, recuperar un objeto de una zona peligrosa y derrotar a determinados enemigos.
+
+Las entregas deben consumir los objetos solicitados y conceder cada recompensa una sola vez.
+
+## 11. Guardado y comportamiento móvil
+
+Guarda localmente:
+
+- Almacén y equipo.
+- Progreso de misiones.
+- Mejoras del refugio.
+- Ajustes.
+- Estado necesario para reanudar una incursión interrumpida.
+
+Utiliza guardado versionado, escritura segura y copia de respaldo.
+
+Gestiona bloqueo de pantalla, cambio de aplicación y cierre inesperado. Al volver, presenta el juego pausado, sin enemigos atacando mientras el usuario recupera el control.
+
+Una interrupción del teléfono no debe duplicar objetos ni convertir automáticamente el botín de una incursión en una extracción.
+
+## 12. Rendimiento
+
+Diseña para móviles de gama media.
+
+Objetivos iniciales:
+
+- 60 FPS cuando el dispositivo lo permita.
+- Opción de limitar a 30 FPS.
+- Calidad gráfica ajustable.
+- Cantidad limitada de enemigos, luces y efectos.
+- Reutilización de efectos y proyectiles cuando resulte útil.
+- Ausencia de asignaciones o cálculos innecesarios en cada fotograma.
+
+Mide el rendimiento disponible y distingue entre resultados en ordenador, emulador y teléfono real. No presentes los objetivos como resultados verificados.
+
+## 13. Organización del proyecto
+
+Separa los sistemas de entrada, movimiento, combate, enemigos, inventario, incursiones, extracción, refugio, misiones, guardado e interfaz.
+
+Define armas, objetos, enemigos y misiones mediante datos o recursos editables para ampliar contenido sin reescribir la lógica.
+
+Evita concentrar todo el juego en un único script y no introduzcas sistemas complejos que esta primera versión no necesita.
+
+## 14. Forma de trabajar
+
+Trabaja en este orden:
+
+1. Revisa el entorno y crea el proyecto.
+2. Implementa movimiento, cámara y controles.
+3. Completa un combate funcional.
+4. Añade botín y mochila.
+5. Conecta extracción, muerte y regreso al refugio.
+6. Añade guardado, misiones y progresión.
+7. Mejora presentación, sonido y tutorial.
+8. Verifica el ciclo completo y prepara las exportaciones disponibles.
+
+Mantén una versión ejecutable durante el desarrollo.
+
+Resuelve autónomamente las decisiones rutinarias y comunica avances concretos. Pregunta únicamente cuando falte una decisión que cambie de manera importante el resultado.
+
+Deja multijugador, cuentas, servidores, anuncios y compras integradas para una fase posterior.
+
+## 15. Verificación y entregables
+
+Comprueba especialmente:
+
+- Movimiento y apuntado simultáneos.
+- Recarga y consumo correcto de munición.
+- Disparos bloqueados por paredes.
+- Capacidad y apilado del inventario.
+- Extracción cancelada y completada.
+- Pérdida de equipo al morir.
+- Entrega única de recompensas.
+- Conservación del progreso al cerrar y abrir.
+- Pausa y reanudación al cambiar de aplicación.
+- Recuperación ante un guardado dañado.
+- Posibilidad de continuar sin recursos.
+
+Entrega:
+
+- Proyecto completo con código y recursos.
+- Instrucciones claras para abrirlo y jugar.
+- Compilación Android si el entorno permite generarla.
+- Configuración e instrucciones de exportación para iOS.
+- Registro breve de lo implementado, probado y pendiente.
+- Procedencia y licencias de recursos externos.
+
+Si no puedes compilar o probar alguna plataforma, conserva el proyecto preparado y explica exactamente qué falta. No afirmes haber realizado pruebas que no has ejecutado.
+
+Considera terminada esta primera versión cuando pueda preparar equipo, entrar en el mapa, combatir, recoger botín, extraer o morir, volver al refugio y jugar otra incursión conservando correctamente el progreso.
+
+Empieza revisando el entorno y construyendo esa primera versión jugable.

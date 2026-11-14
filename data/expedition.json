@@ -1,0 +1,26 @@
+{
+  "boss_position": [
+    -26,
+    -22
+  ],
+  "cache_position": [
+    -27,
+    -25
+  ],
+  "supply_points": [
+    [
+      -3,
+      23
+    ],
+    [
+      22,
+      20
+    ],
+    [
+      -22,
+      -16
+    ]
+  ],
+  "announce": 90,
+  "arrival": 105
+}

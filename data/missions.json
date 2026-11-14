@@ -1,0 +1,79 @@
+[
+  {
+    "id": "repair",
+    "name": "Respirar a crédito",
+    "description": "Vera necesita reparar la ventilación del refugio. Recupera 6 chatarras y 3 cables. La compañía vendió los filtros de emergencia; aquí se remienda lo que dejaron.",
+    "needs": {
+      "scrap": 6,
+      "wire": 3
+    },
+    "reward": 120,
+    "target": [
+      -8,
+      8
+    ],
+    "aftermath": "Vera: «La ventilación vuelve a funcionar. No preguntes cuánto durarán estos filtros. Esta noche basta.»"
+  },
+  {
+    "id": "blackbox",
+    "name": "Tu nombre en la orden",
+    "description": "Recupera la grabación del fondo del almacén 07. Taro dejó la llamada que ordenó cerrar las puertas. Nilo necesita escuchar qué autorizó con su firma.",
+    "needs": {
+      "recorder": 1
+    },
+    "reward": 220,
+    "target": [
+      19,
+      -15
+    ],
+    "aftermath": "Nilo reconoce su propia voz dando las rutas. Luego otra voz ordena bloquear el turno de noche. El silencio entre ambas es la prueba."
+  },
+  {
+    "id": "patrol",
+    "name": "Salario de sangre",
+    "description": "Los vigías destruyen pruebas y cierran la ruta. Acaba con 3 a lo largo de tus incursiones. Vera paga por las bajas; no va a llamarlo justicia.",
+    "kills": 3,
+    "reward": 180,
+    "target": [
+      20,
+      -5
+    ],
+    "aftermath": "Vera cuenta tres bajas y deja las fichas en la mesa. «Había trabajadores bajo esos uniformes. Ahora hay otros tres puestos que alguien cubrirá.»"
+  },
+  {
+    "id": "cipher",
+    "name": "Contabilidad de los muertos",
+    "description": "Encuentra la llave en el puesto forestal. Abre la reserva norte y extrae el registro cifrado: primas por accesos cerrados y nombres vendidos como evacuados.",
+    "needs": {
+      "cipher": 1
+    },
+    "reward": 260,
+    "target": [
+      -27,
+      -25
+    ],
+    "aftermath": "Vera descifra una transferencia al nombre de Nilo. No es la orden de matar; es el pago por no comprobar a quién dejaban atrás."
+  },
+  {
+    "id": "warden",
+    "name": "El precio de una plaza",
+    "description": "El capataz vendió plazas de evacuación inexistentes. Abátelo y extrae su insignia. Su contacto paga por ella. Es opcional: calcula el coste antes de ir.",
+    "needs": {
+      "warden_badge": 1
+    },
+    "reward": 300,
+    "target": [
+      -26,
+      -22
+    ],
+    "aftermath": "La insignia tenía un número de cuenta grabado detrás. Vera lo copia antes de entregarla. «Mañana necesitaré comprar medicinas a alguien de su lista.»"
+  },
+  {
+    "id": "craftsman",
+    "name": "Nada se desperdicia",
+    "description": "Fabrica tres lotes en el banco de Vera. Las telas venían de uniformes abandonados; las vendas ya no son blancas. Cada receta completada cuenta una vez.",
+    "crafted": 3,
+    "reward": 100,
+    "aftermath": "Vera corta las etiquetas de los uniformes antes de hacer vendas. Los nombres quedan en una lata. Los suministros, en el almacén."
+  }
+]

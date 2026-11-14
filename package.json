@@ -1,0 +1,14 @@
+{
+  "name": "proyecto-choskov-tests",
+  "version": "0.5.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "python3 tests/run_tests.py",
+    "preview": "python3 -m http.server 8787 --bind 127.0.0.1 --directory builds/web",
+    "test:web": "node tests/browser_check.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.58.2"
+  }
+}

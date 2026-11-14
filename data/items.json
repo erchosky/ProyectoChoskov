@@ -1,0 +1,170 @@
+{
+  "pistol": {
+    "name": "Pistola Junco",
+    "description": "Arma fiable de 9 mm. 12 disparos, alcance 19 m.",
+    "category": "arma",
+    "stack": 1,
+    "price": 90,
+    "color": "#d8bd81"
+  },
+  "rifle": {
+    "name": "Rifle Zarzal",
+    "description": "5,56 mm. 24 disparos, mayor cadencia y alcance.",
+    "category": "arma",
+    "stack": 1,
+    "price": 210,
+    "color": "#e3a06e"
+  },
+  "ammo9": {
+    "name": "Munición 9 mm",
+    "description": "Munición de la pistola Junco.",
+    "category": "munición",
+    "stack": 60,
+    "price": 1,
+    "color": "#e9c98a"
+  },
+  "ammo556": {
+    "name": "Munición 5,56",
+    "description": "Munición del rifle Zarzal.",
+    "category": "munición",
+    "stack": 60,
+    "price": 2,
+    "color": "#e8ac7a"
+  },
+  "bandage": {
+    "name": "Vendaje",
+    "description": "Recupera 25 de salud en 2 segundos.",
+    "category": "curación",
+    "stack": 5,
+    "price": 12,
+    "color": "#cce6cc"
+  },
+  "medkit": {
+    "name": "Botiquín",
+    "description": "Recupera 60 de salud en 3,5 segundos.",
+    "category": "curación",
+    "stack": 3,
+    "price": 35,
+    "color": "#f2a8a0"
+  },
+  "scrap": {
+    "name": "Chatarra",
+    "description": "Metal útil para ampliar el almacén.",
+    "category": "material",
+    "stack": 10,
+    "price": 8,
+    "color": "#a7bdc3"
+  },
+  "wire": {
+    "name": "Cable de cobre",
+    "description": "Material para el taller y las misiones.",
+    "category": "material",
+    "stack": 10,
+    "price": 10,
+    "color": "#cda279"
+  },
+  "cloth": {
+    "name": "Tela resistente",
+    "description": "Retales para suministros y protección.",
+    "category": "material",
+    "stack": 10,
+    "price": 6,
+    "color": "#cfcaad"
+  },
+  "circuit": {
+    "name": "Circuito",
+    "description": "Componente poco común del almacén.",
+    "category": "material",
+    "stack": 5,
+    "price": 24,
+    "color": "#86c9bc"
+  },
+  "battery": {
+    "name": "Batería",
+    "description": "Alimenta la torre de radio: se consume una por incursión al activarla.",
+    "category": "material",
+    "stack": 5,
+    "price": 20,
+    "color": "#b8d574"
+  },
+  "filter": {
+    "name": "Filtro de agua",
+    "description": "Pieza útil para el refugio.",
+    "category": "material",
+    "stack": 5,
+    "price": 18,
+    "color": "#87aab7"
+  },
+  "armor": {
+    "name": "Chaleco Musgo",
+    "description": "Reduce un 25 % el daño recibido.",
+    "category": "equipo",
+    "stack": 1,
+    "price": 100,
+    "color": "#96b493"
+  },
+  "pack": {
+    "name": "Mochila Travesía",
+    "description": "Equipada: aumenta de 12 a 16 ranuras.",
+    "category": "equipo",
+    "stack": 1,
+    "price": 110,
+    "color": "#c9ac72"
+  },
+  "recorder": {
+    "name": "Caja negra",
+    "description": "Prueba de la orden de cerrar el turno de noche. La voz de Nilo figura en la grabación.",
+    "category": "misión",
+    "stack": 1,
+    "price": 75,
+    "color": "#efcc70"
+  },
+  "shotgun": {
+    "name": "Escopeta Brezo",
+    "description": "Seis perdigones por cartucho. Potente de cerca; alcance 11 m.",
+    "category": "arma",
+    "stack": 1,
+    "price": 240,
+    "color": "#e0ac89"
+  },
+  "ammo20": {
+    "name": "Cartuchos calibre 20",
+    "description": "Munición de Brezo. Un cartucho dispara seis perdigones.",
+    "category": "munición",
+    "stack": 24,
+    "price": 3,
+    "color": "#e7a889"
+  },
+  "decoy": {
+    "name": "Señuelo de cuerda",
+    "description": "Lánzalo hacia donde apuntas: atrae patrullas con ruido durante 8 s. No distrae a quien ya te persigue.",
+    "category": "herramienta",
+    "stack": 3,
+    "price": 24,
+    "color": "#b5d1dc"
+  },
+  "outpost_key": {
+    "name": "Llave del puesto",
+    "description": "Abre una vez la reserva del puesto norte. Se encuentra en el puesto forestal.",
+    "category": "misión",
+    "stack": 1,
+    "price": 30,
+    "color": "#e4cc8b"
+  },
+  "cipher": {
+    "name": "Registro cifrado",
+    "description": "Contabilidad del encubrimiento: pagos, nombres tachados y primas de evacuación. Vera puede descifrarla.",
+    "category": "misión",
+    "stack": 1,
+    "price": 120,
+    "color": "#b3d4e5"
+  },
+  "warden_badge": {
+    "name": "Insignia del capataz",
+    "description": "El contacto del capataz paga por esta insignia. La muerte no cancela sus negocios.",
+    "category": "misión",
+    "stack": 1,
+    "price": 90,
+    "color": "#dc9d84"
+  }
+}

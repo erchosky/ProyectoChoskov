@@ -1,0 +1,30 @@
+{
+  "pistol": {
+    "capacity": 12,
+    "ammo": "ammo9",
+    "damage": 27,
+    "interval": 0.34,
+    "reload": 1.5,
+    "range": 19,
+    "spread": 0.025
+  },
+  "rifle": {
+    "capacity": 24,
+    "ammo": "ammo556",
+    "damage": 23,
+    "interval": 0.13,
+    "reload": 2.2,
+    "range": 27,
+    "spread": 0.048
+  },
+  "shotgun": {
+    "capacity": 6,
+    "ammo": "ammo20",
+    "damage": 12,
+    "interval": 0.8,
+    "reload": 2.4,
+    "range": 11,
+    "spread": 0.16,
+    "pellets": 6
+  }
+}
